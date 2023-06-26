@@ -1,0 +1,50 @@
+.loader {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid rgba(255, 255, 255, 0.35);
+    animation-name: spin;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 1;
+    transition: all 0.28s ease;
+    transition-delay: 0.1s;
+}
+
+.isDisabled {
+    color: #fff !important;
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        -moz-transform: translateY(-50%) rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        -webkit-transform: translateY(-50%) rotate(360deg);
+    }
+}
+@keyframes spin {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}

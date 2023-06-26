@@ -1,0 +1,227 @@
+import makeStyles from '@material-ui/core/styles/makeStyles'
+
+export const usePollItemStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    justifyContent: 'space-around',
+    textDecoration: 'none !important',
+  },
+  strong: {
+    color: '#0A3D80',
+    fontWeight: 'bold',
+    fontSize: '13px',
+    marginLeft: '5px',
+    cursor: 'pointer',
+  },
+  mrZero: {
+    [theme.breakpoints.down('sm')]: {},
+  },
+  audioOptions: {
+    '& .audio-content': {
+      width: '100%',
+      '& .content-head': {
+        backgroundColor: '#232521',
+        color: '#fff',
+        padding: '3px 5px',
+        fontSize: '9px',
+        lineHeight: '11px',
+        '&  .helper-icon': {
+          marginRight: 7,
+        },
+      },
+      '& .content-body': {
+        padding: 6,
+        alignItems: 'center',
+        '& .play-icon': {
+          marginRight: 10,
+          backgroundColor: '#232521',
+          fontSize: 12,
+          borderRadius: '50%',
+          color: '#ffffff',
+        },
+        '& .play-visual-img': {
+          maxWidth: 110,
+        },
+      },
+    },
+  },
+  containerRoot: {
+    display: 'flex',
+    alignItems: 'center',
+  },
+  footerLabel: {
+    margin: 0,
+    left: 0,
+    bottom: -45,
+    fontSize: 14,
+    padding: 15,
+    width: '100%',
+    color: '#ffffff',
+    lineHeight: '16px',
+    textAlign: 'center',
+    position: 'absolute',
+    fontFamily: "'made_tommyregular',sans-serif",
+    textTransform: 'uppercase',
+    backgroundColor: '#C4C4C4',
+    borderBottomLeftRadius: 15,
+    borderBottomRightRadius: 15,
+  },
+  pollItem: {
+    padding: '14px 16px',
+    backgroundColor: '#FFF',
+    borderRadius: 15,
+    borderBottomLeftRadius: 0,
+    borderBottomRightRadius: 0,
+    position: 'relative',
+    minHeight: 185,
+    boxShadow: '0 4px 9px rgba(85, 85, 85, 0.48)',
+    '& .footerBgType': {
+      backgroundColor: '#0414FF',
+    },
+  },
+  label: {
+    fontSize: 16,
+    lineHeight: '20px',
+    fontFamily: "'made_tommyregular',sans-serif",
+    marginBottom: 12,
+    display: 'block',
+    color: '#232521',
+    textAlign: 'center',
+  },
+
+  img: {
+    padding: '15px 0',
+  },
+  span: { marginBottom: 0 },
+  a: {
+    color: '#13AB19',
+    textDecoration: 'none !important',
+  },
+  imgOption: {
+    borderRadius: 10,
+    backgroundColor: '#fff',
+    width: 160,
+    minHeight: 85,
+    display: 'grid',
+    placeContent: 'center',
+    marginRight: 15,
+    boxShadow: (props) =>
+      props.content.boxed === undefined
+        ? '0px 1px 16px rgba(153, 153, 153, 0.25)'
+        : 'none',
+  },
+  txtOptionExtended: {
+    alignItems: 'flex-start',
+    margin: '4px 0 0 0',
+    width: 'calc(100% - 30px)',
+    '& .check-icon': {
+      marginRight: 10,
+      color: '#13AB19',
+      width: '.9em',
+      height: '.9em',
+    },
+    '& label': {
+      boxShadow: '0px 3px 14px rgb(166 166 166 / 25%)',
+      padding: '7px 10px',
+      width: '100%',
+
+      borderRadius: 5,
+      backgroundColor: '#232521',
+      color: '#fff',
+      fontWeight: 400,
+      fontSize: 14,
+    },
+  },
+  txtOption: {
+    alignItems: 'center',
+    margin: '0 auto 8px',
+    width: 'calc(100% - 30px)',
+    '& .check-icon': {
+      marginRight: 10,
+      color: '#13AB19',
+      width: '.9em',
+      height: '.9em',
+    },
+    '& label': {
+      boxShadow: '0px 3px 14px rgb(166 166 166 / 25%)',
+      padding: '7px 10px',
+      width: '100%',
+
+      borderRadius: 5,
+      backgroundColor: '#232521',
+      color: '#fff',
+      fontWeight: 400,
+      fontSize: 14,
+    },
+  },
+  vdoOption: {
+    width: '100%',
+    height: 76,
+    display: 'grid',
+    placeContent: 'center',
+    backgroundSize: 'cover',
+    borderRadius: 5,
+    marginTop: 0,
+    marginBottom: 8,
+    maxWidth: 'calc(50% - 10px)',
+    position: 'relative',
+    [theme.breakpoints.down('sm')]: {
+      height: 80,
+    },
+    '& label': {
+      bottom: '-20px',
+      position: 'absolute',
+      width: '100%',
+      textAlign: 'center',
+      color: '#000',
+      fontSize: 10,
+      fontFamily: "'made_tommyregular',sans-serif",
+    },
+    '& .option-content': {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      textAlign: 'center',
+      color: '#fff',
+      '& .play-icon': {
+        marginBottom: 7,
+        backgroundColor: '#f7f7f7',
+        padding: 3,
+        borderRadius: '50%',
+        color: '#0414ff',
+      },
+    },
+    '&.item-1': {
+      backgroundImage: 'url(./../images/poll-item/pol-img-32.png)',
+    },
+    '&.item-2': {
+      backgroundImage: 'url(./../images/poll-item/pol-img-31.png)',
+    },
+  },
+  mdaOption: {
+    height: 100,
+    borderRadius: 5,
+    marginBottom: 8,
+    backgroundColor: '#040C4C',
+    position: 'relative',
+    display: 'grid',
+    placeContent: 'center',
+    color: '#ffffff',
+    '& .option-label': {
+      top: 0,
+      left: 0,
+      color: '#040C4C',
+      width: 'calc(100% - 4px)',
+      padding: '4px',
+      position: 'absolute',
+      borderRadius: '4px',
+      margin: '2px',
+      backgroundColor: '#fff',
+      textAlign: 'center',
+      fontWeight: 500,
+    },
+    '& .media-label': {
+      marginTop: 25,
+    },
+  },
+}))

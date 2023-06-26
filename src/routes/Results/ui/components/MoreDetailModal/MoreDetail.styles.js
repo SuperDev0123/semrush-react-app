@@ -1,0 +1,72 @@
+import { makeStyles } from '@material-ui/core'
+
+export const useMoreDetailModalStyles = makeStyles((theme) => ({
+  dialogTitle: {
+    color: '#0A3D80',
+    fontSize: 30,
+    fontStyle: 'normal',
+    textAlign: 'left',
+    fontFamily: "'made_tommymedium',sans-serif",
+    fontWeight: 700,
+    marginBottom: 0,
+    letterSpacing: '0em',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 23,
+    },
+  },
+  dialogTitleWrapper: {
+    flex: '0 0 auto',
+    margin: 0,
+    padding: '16px 24px',
+  },
+  body2: {
+    color: '#3C3F3B',
+    margin: '0 auto',
+    display: 'flex',
+    position: 'relative',
+    fontSize: 16,
+    fontFamily: "'made_tommyregular', sans-serif",
+    fontWeight: 500,
+    flexDirection: 'column',
+    textTransform: 'uppercase',
+    justifyContent: 'spaceBetween',
+    backgroundColor: '#FFF',
+    marginBottom: 5,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 14,
+    },
+  },
+  dialogContentList: {
+    listStyle: 'decimal',
+    display: 'flex',
+    flexDirection: 'column',
+    paddingLeft: 15,
+    paddingRight: 15,
+    color: '#232521',
+    fontSize: 18,
+    fontStyle: 'normal',
+    textAlign: 'left',
+    fontFamily: "'made_tommylight',sans-serif",
+    fontWeight: 300,
+    lineHeight: 1.3,
+    marginBottom: 29,
+    letterSpacing: '0em',
+    '& li': {
+      marginBottom: '10px',
+      color: 'rgba(0,0,0,1)',
+      fontSize: '16px',
+      fontStyle: 'normal',
+      textAlign: 'left',
+      fontFamily: 'made_tommy, sans-serif',
+      fontWeight: 500,
+      letterSpacing: '0em',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 16,
+    },
+  },
+  dialogContentStrong: {
+    fontWeight: 500,
+    fontFamily: "'made_tommyregular',sans-serif",
+  },
+}))

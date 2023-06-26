@@ -1,0 +1,188 @@
+import { makeStyles } from '@material-ui/styles'
+
+const createStyle = makeStyles((theme) => ({
+  paper: {
+    padding: '0.5rem 0',
+    margin: '0.35rem 0',
+    border: 'none',
+    borderRadius: '0.5rem',
+    cursor: 'pointer',
+    position: 'relative',
+    boxShadow: '0px 0px 5px 0px rgba(0,0,0,0.10)',
+  },
+  cardDetails: {
+    padding: '19px 19px 0',
+  },
+  title: {
+    fontFamily: 'Poppins SemiBold',
+    color: theme.palette.common.black,
+    fontSize: '14px',
+    lineHeight: '21px',
+  },
+  subTitle: {
+    fontFamily: 'Poppins',
+    fontWeight: '400',
+    color: '#929292',
+    fontSize: '11px',
+    lineHeight: '16px',
+  },
+  iconContinuer: {
+    display: 'flex',
+    alignItems: 'center',
+    marginTop: '6px',
+    whiteSpace: 'nowrap',
+  },
+  iconText: {
+    fontFamily: 'Poppins Regular',
+    fontSize: '11px',
+    lineHeight: '17px',
+    marginRight: '25px',
+    display: 'flex',
+    alignItems: 'center',
+    color: '#929292',
+  },
+  options: {
+    display: 'flex',
+    justifyContent: 'end',
+  },
+  percentageContainer: {
+    zIndex: '11',
+    marginRight: '3px',
+    borderRight: '1px solid #E5E5E5',
+    borderLeft: '1px solid #E5E5E5',
+    padding: '0 14px',
+    display: 'flex',
+    alignItems: 'center',
+    textAlign: 'center',
+    justifyContent: 'center',
+    [theme.breakpoints.down('sm')]: {
+      padding: '0',
+    },
+  },
+
+  percentageContain: {
+    width: '95px',
+    display: '-webkit-box',
+    '-webkit-line-clamp': 3,
+    '-webkit-box-orient': 'vertical',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    cursor: 'default',
+    [theme.breakpoints.down('xs')]: {
+      width: '75px',
+    },
+  },
+  percentage: {
+    fontFamily: 'Poppins Bold',
+    fontSize: '18px',
+    lineHeight: '27px',
+    color: '#0A3C81',
+  },
+  percentageText: {
+    fontFamily: 'Poppins Regular',
+    fontSize: '11px',
+    textOverflow: 'ellipsis',
+    overflow: 'hidden',
+    zIndex: '11',
+    lineHeight: '15px',
+    color: theme.palette.common.black,
+  },
+  buttonsContainer: {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+  },
+  buttons: {
+    borderRadius: '0.3rem',
+    zIndex: '11',
+    border: '1px solid #E5E5E5',
+    height: '52px',
+    width: '52px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    marginLeft: '12px',
+    '&:hover': {
+      borderRadius: '5px',
+      boxShadow: '0px 1px 7px 0px rgba(0,0,0,0.08)',
+    },
+    '&:active': {
+      borderRadius: '5px',
+      boxShadow: 'inset 0px 1px 7px 0px rgba(0,0,0,0.08)',
+    },
+    [theme.breakpoints.down('sm')]: {
+      height: '38px',
+      width: '38px',
+    },
+  },
+  cardUpdates: {
+    height: '3.5rem',
+    display: 'flex',
+    alignItems: 'center',
+    paddingRight: '1rem',
+    justifyContent: 'start',
+    [theme.breakpoints.down('lg')]: {
+      marginTop: '1rem',
+    },
+    [theme.breakpoints.down('md')]: {
+      marginTop: '1rem',
+      justifyContent: 'space-between',
+    },
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '0.5rem',
+    },
+  },
+  cardUpdatesText: {
+    fontFamily: 'Poppins Italic',
+    fontSize: '12px',
+    paddingLeft: '31px',
+    lineHeight: '17px',
+    color: theme.palette.common.black,
+    [theme.breakpoints.down('xs')]: {
+      marginTop: '.5rem',
+      paddingLeft: '17px',
+    },
+  },
+  cardUpdatesStatus: {
+    height: '32px',
+    width: '124px',
+    position: 'relative',
+    fontFamily: 'Poppins Bold',
+    padding: '0.5rem 0.8rem',
+    fontSize: '13px',
+    lineHeight: '17px',
+    textAlign: 'center',
+    color: theme.palette.common.white,
+    // backgroundColor: "#016AE9",
+
+    '&::after': {
+      content: '" "',
+      position: 'absolute',
+      transform: 'rotate(90deg)',
+      top: '1px',
+      right: 0,
+      backgroundColor: 'transparent',
+      width: '0',
+      height: '0',
+      borderTop: '15px solid white',
+      borderRight: '15px solid transparent',
+      borderBottom: '15px solid transparent',
+      borderLeft: '15px solid transparent',
+    },
+  },
+  mIcons: {
+    color: theme.palette.common.black,
+  },
+  link: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    left: 0,
+    bottom: 0,
+    height: '100%',
+    width: '100%',
+    zIndex: '10',
+  },
+}))
+
+export default createStyle
